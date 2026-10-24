@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Navigation is the car's built-in maps app: grant it location up front instead of
+     asking the driver on first use. -->
+<exceptions>
+    <exception package="com.autobox.navigation">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false" />
+    </exception>
+</exceptions>

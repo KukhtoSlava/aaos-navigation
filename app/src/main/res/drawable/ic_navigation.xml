@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App icon: a navigation arrow in the AutoBox cluster accent on a dark tile. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#0C1117"
+        android:pathData="M12,2L36,2A10,10 0,0 1,46 12L46,36A10,10 0,0 1,36 46L12,46A10,10 0,0 1,2 36L2,12A10,10 0,0 1,12 2Z" />
+    <path
+        android:fillColor="#4FD1C5"
+        android:pathData="M24,9L36,38L24,31.5L12,38Z" />
+</vector>

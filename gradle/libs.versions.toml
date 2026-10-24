@@ -1,0 +1,39 @@
+# Versions follow TomTom's example app (github.com/tomtom-international/tomtom-example-app).
+[versions]
+
+tomtomSdk                       = "2.6.3"
+
+androidGradlePlugin             = "8.13.2"
+androidxActivity                = "1.10.1"
+androidxAppcompat               = "1.7.1"
+androidxCarApp                  = "1.7.0"
+androidxComposeBom              = "2025.07.00"
+androidxCore                    = "1.16.0"
+androidxLifecycle               = "2.9.2"
+kotlin                          = "2.1.21"
+
+[libraries]
+
+androidxActivity-compose        = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidxAppcompat               = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
+androidxCar-app                 = { group = "androidx.car.app", name = "app", version.ref = "androidxCarApp" }
+androidxCar-appAutomotive       = { group = "androidx.car.app", name = "app-automotive", version.ref = "androidxCarApp" }
+androidxCompose-bom             = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidxComposeFoundation       = { group = "androidx.compose.foundation", name = "foundation" }
+androidxComposeMaterial3        = { group = "androidx.compose.material3", name = "material3" }
+androidxComposeUi               = { group = "androidx.compose.ui", name = "ui" }
+androidxCore-ktx                = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidxLifecycle-compose       = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidxLifecycle-service       = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "androidxLifecycle" }
+
+tomtomSdk-init                  = { group = "com.tomtom.sdk", name = "init", version.ref = "tomtomSdk" }
+tomtomSdkLocation-default       = { group = "com.tomtom.sdk.location", name = "provider-default", version.ref = "tomtomSdk" }
+tomtomSdkLocation-simulation    = { group = "com.tomtom.sdk.location", name = "provider-simulation", version.ref = "tomtomSdk" }
+tomtomSdkMaps-compose           = { group = "com.tomtom.sdk.maps", name = "map-display-compose-standard", version.ref = "tomtomSdk" }
+tomtomSdkMaps-visualization     = { group = "com.tomtom.sdk.maps.visualization", name = "visualization-compose", version.ref = "tomtomSdk" }
+
+[plugins]
+
+android-application             = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android                  = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose                  = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
